@@ -16,13 +16,16 @@
     <div class="chapter">
         <h2>Preamble</h2>
         <p>Welcome to the wonderful world of combinatory logic,
-            a lovechild of lisp and brainfuck, developed by Moses Schönfinkel and Haskell Curry in the 1920s.</p>
+            a lovechild of lisp and brainfuck, developed by 
+            <a href="https://en.wikipedia.org/wiki/Moses_Sch%C3%B6nfinkel">Moses Schönfinkel</a> and 
+            <a href="https://en.wikipedia.org/wiki/Haskell_Curry">Haskell Curry</a> in the 1920s.</p>
 
         <p>A combinator is a one-argument function that accepts a one-argument function and
             returns a one-argument function.
             Everything here is a function - numbers, booleans, lists, and even free variables
             stand for functions we don't know how to compute just yet.</p>
-        <p>The tradition is to depict the combinators as birds, and we won't be stepping too far away from it.</p>
+        <p>The <a href="https://en.wikipedia.org/wiki/To_Mock_a_Mockingbird">tradition</a> is to depict the combinators as birds, 
+            and we won't be stepping too far away from it.</p>
     </div>
 
     <div class="chapter">
@@ -31,9 +34,12 @@
         <ul>
             <li>Given that <code>x</code> and <code>y</code> are combinators, then so is <code>x y</code>;
                 if <code>z</code> is also a combinator, then <code>x y z</code> is calculated as <code>(x y) z</code>.
+            </li>
+            <li>
                 <code>x y z</code>, <code>x(y)(z)</code>, <code>(x y)(z)</code>, <code>(x(y))(z)</code>
                 are all the same thing.
-                <code>x (y z)</code>, however, is <i>not</i> the same as <code>(x y) z</code>
+            </li>
+            <li><code>x (y z)</code>, however, is <i>not</i> the same as <code>(x y) z</code>
                 (at least not for arbitrary terms).
             </li>
 
@@ -87,6 +93,11 @@
             That is, given two functions and an argument (which is also a function given the setup,
             but it's not important here), it applies both functions to the argument and fuses the results together.
         </p>
+        
+        <p>
+            As a matter of fact, <code>I</code> can be derived from <code>S</code> and <code>K</code>
+            and those two thus form a basis together.
+        </p>
     </div>
     <div class="chapter">
         <h2>Connection to lambda calculus</h2>
@@ -99,14 +110,13 @@
             <li><code>x &mapsto; y(z)</code> becomes <code>S(x &mapsto; y)(x &mapsto; z)</code>,
                 where <code>y</code> and <code>z</code> may or may not depend on <code>x</code>.
             </li>
-            <li>The process is repeated from the innermost lambda expression outwards and
-                is guaranteed to terminate. <i>(proof?..)</i></li>
+            <li>The process, known as bracket abstraction, is repeated from the innermost lambda expression
+                outwards and is guaranteed to terminate.</li>
         </ul>
-
-        <p>
-            As a matter of fact, <code>I</code> can be derived from <code>S</code> and <code>K</code>
-            and those two thus form a basis together.
-        </p>
+        For an optimal conversion algorithm, see
+        <a href="https://okmij.org/ftp/tagless-final/ski.pdf">λ to SKI, Semantically — Declarative Pearl</a>
+        by Oleg Kiselyov (Tohoku University, Japan) and
+        <a href="https://crypto.stanford.edu/~blynn/lambda/kiselyov.html">detailed implementation notes</a> by Ben Lynn.
     </div>
     <div class="chapter">
         <h2>In place of a conclusion</h2>
