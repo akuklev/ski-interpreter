@@ -18,8 +18,10 @@
         <p>Welcome to the wonderful world of combinatory logic,
             a lovechild of lisp and brainfuck, developed by 
             <a href="https://en.wikipedia.org/wiki/Moses_Sch%C3%B6nfinkel">Moses Schönfinkel</a> and 
-            <a href="https://en.wikipedia.org/wiki/Haskell_Curry">Haskell Curry</a> in the 1920s.</p>
-
+            <a href="https://en.wikipedia.org/wiki/Haskell_Curry">Haskell Curry</a> in the 1920s.
+            While originally developed to study the underpinnings of logic, it is best understood as a
+            variable-free programming language that works as simple it possibly gets.</p>
+        
         <p>A combinator is a one-argument function that accepts a one-argument function and
             returns a one-argument function.
             Everything here is a function - numbers, booleans, lists, and even free variables
@@ -32,8 +34,9 @@
         <h2>How computations work</h2>
 
         <ul>
-            <li>Given that <code>x</code> and <code>y</code> are combinators, then so is <code>x y</code>;
-                if <code>z</code> is also a combinator, then <code>x y z</code> is calculated as <code>(x y) z</code>.
+            <li>Given that <code>x</code> and <code>y</code> are combinators, then so is <code>x y</code>, namely the one
+                returned by <code>x</code> when applied to <code>y</code>. If <code>z</code> is also a combinator, so is
+                <code>(x y) z</code>, which is also allowed to be written as <code>x y z</code> to save on parentheses.
             </li>
             <li>
                 <code>x y z</code>, <code>x(y)(z)</code>, <code>(x y)(z)</code>, <code>(x(y))(z)</code>
@@ -42,7 +45,6 @@
             <li><code>x (y z)</code>, however, is <i>not</i> the same as <code>(x y) z</code>
                 (at least not for arbitrary terms).
             </li>
-
             <li>
                 If a <i>reduction rule</i> is known for the <i>leftmost</i> term in an (sub-)expression, it is applied.
                 Reduction rules are given in the form of <code>X a b c = b (c a)</code>
@@ -58,7 +60,7 @@
             </li>
         </ul>
 
-        <p>With a right set of initial terms this is enough for Turing completeness,
+        <p>With a right inventory of initial combinators this is enough for Turing completeness,
             and at least one such set exists, as we'll see shortly.</p>
     </div>
     <div class="chapter">
@@ -118,6 +120,23 @@
         by Oleg Kiselyov (Tohoku University, Japan) and
         <a href="https://crypto.stanford.edu/~blynn/lambda/kiselyov.html">detailed implementation notes</a> by Ben Lynn.
     </div>
+
+    
+    <div class="chapter">
+        <h2>Connection to logic</h2>
+        <p>Meet Euclid's theorem: for every number <i>n</i> there is a prime <i>p > n</i>.<br/>
+            For millennia, mathematicians used to state mathematical facts like this using everyday languages, but in the
+            1870s they were replaced by a formalized language called predicate logic,
+            where Euclid's theorem looks like this: <code>∀(n) ∃(p, p > n) p prime</code>.</p>
+
+         <p>Symbols like ∀ (for all) and ∃ (exists) are called quantifiers and they introduce lexically scoped variables,
+             <i>n</i> and <i>p</i> in case of Euclid's theorem as we stated it. Lexical variables are somewhat nontrivial
+             to deal with, while mathematicians strived for completely straightforward minimalistic foundation, a “trusted core”.
+             So they seeked for an alternative, variable-free notation for predicate logic, which indeed exists and is known as
+             <a href="https://en.wikipedia.org/wiki/Predicate_functor_logic">Predicate Functor Logic</a>.
+     </div>
+
+    
     <div class="chapter">
         <h2>In place of a conclusion</h2>
 
