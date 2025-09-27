@@ -129,11 +129,20 @@
             1870s they were replaced by a formalized language called predicate logic,
             where Euclid's theorem looks like this: <code>∀(n) ∃(p, p > n) p prime</code>.</p>
 
-         <p>Symbols like ∀ (for all) and ∃ (exists) are called quantifiers and they introduce lexically scoped variables,
-             <i>n</i> and <i>p</i> in case of Euclid's theorem as we stated it. Lexical variables are somewhat nontrivial
-             to deal with, while mathematicians strived for completely straightforward minimalistic foundation, a “trusted core”.
-             So they seeked for an alternative, variable-free notation for predicate logic, which indeed exists and is known as
-             <a href="https://en.wikipedia.org/wiki/Predicate_functor_logic">Predicate Functor Logic</a>.
+        <p>Symbols like ∀ (for all) and ∃ (exists) are called quantifiers and they introduce lexically scoped variables,
+            <i>n</i> and <i>p</i> in case of Euclid's theorem as we stated it. Lexical variables are somewhat nontrivial
+            to deal with, while mathematicians strived for completely straightforward minimalistic foundation, a “trusted core”.
+            So they seeked for an alternative, variable-free notation for predicate logic, which was the original motivation
+            for developing combinatory logic.</p>
+
+        <p>Not only predicate logic, but in fact any language with scoped variables can be embedded into the variable-free
+            language of combinatory logic, which turned out to be extremely minimalistic and straightforward, as desired for
+            a “trusted core formalism”, but its Turing completeness makes it impossible to single out expressions coming from
+            the language being embedded, unless a typing discipline is introduced.</p>
+        
+        <p>Eventually, W. V. Quine (“Variables explained away”, 1960) has developed a typed combinatory logic flavour called
+            <a href="https://en.wikipedia.org/wiki/Predicate_functor_logic">Predicate Functor Logic</a> providing
+            a variable-free notation for predicate logic.
      </div>
 
     
