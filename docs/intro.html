@@ -100,16 +100,16 @@
         <p><code>X</code>, the combinator adhering <code>X x = x(X(X(X(XX))))(X(X(XX)))</code>, is sufficient to reconstruct
         <code>I = XX</code>, <code>K = X(XI)</code>, and <code>S = XK</code>. This way, combinatory logic with a sole
         <code>X</code> combinator already interprets λ-calculus and is Turing-complete. Combinatory logic can thus be defined
-        as an equational theory with a single binary operation (application), a single constant (<code>X</code>) and a single
-        identity (the reduction rule stated above), which might be the simplest thinkable computationally universal system.
+        as an equational theory with a single binary operation representing application, a single constant <code>X</code>, and
+        a single identity: the reduction rule stated above. This equational theory might be the simplest thinkable computationally universal system.
     </div>
     
     <div class="chapter">
         <h2>Connection to logic</h2>
-        <p>Meet Euclid's theorem: for every number <i>n</i> there is a prime <i>p > n</i>.
+        <p>Meet Euclid's theorem: for every number <i>n</i> there is a prime <i>p > n</i>.<br/>
             For millennia, mathematicians used to state mathematical facts like this using everyday languages,
-            until they were superseded by a formalized language called predicate logic,
-            where Euclid's theorem looks like this: <code>∀(n) ∃(p, p > n) p prime</code>.</p>
+            until they were superseded by a formalized language called predicate logic.<br/>
+            There, Euclid's theorem reads <code>∀(n) ∃(p, p > n) p prime</code>.</p>
 
         <p>Symbols like ∀ (for all) and ∃ (exists) are called quantifiers and they introduce lexically scoped variables,
             <i>n</i> and <i>p</i> in case of Euclid's theorem as we stated it. Lexical variables are somewhat nontrivial
@@ -122,7 +122,8 @@
             a “trusted core formalism”, but its Turing completeness makes it impossible to single out expressions coming from
             the language being embedded, unless a typing discipline is introduced.</p>
         
-        <p>Eventually, W. V. Quine (“Variables explained away”, 1960) has developed a typed combinatory logic flavour called
+        <p>Eventually, <a href="https://en.wikipedia.org/wiki/Willard_Van_Orman_Quine">W. V. Quine</a>
+            (“Variables explained away”, 1960) devised a typed combinatory logic flavour called
             <a href="https://en.wikipedia.org/wiki/Predicate_functor_logic">Predicate Functor Logic</a> providing
             a variable-free notation for predicate logic. Such variable-free representations of languages featuring untyped
             or simply-typed variables are now well-understood, while languages featuring dependently typed variables remain
