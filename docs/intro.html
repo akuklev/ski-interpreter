@@ -89,12 +89,12 @@
     </div>
     <div class="chapter">
         <h2>Connection to lambda calculus</h2>
-
+        
         <p>An arbitrary lambda expression can be converted to SKI via the following rules:</p>
         <ul>
             <li><code>x &mapsto; x</code> becomes <code>I</code>;</li>
-            <li><code>x &mapsto; f(x)</code> (where f is independent of x) becomes <code>f</code>;</li>
-            <li><code>x &mapsto; y</code> (where y does not depend on x) becomes <code>K y</code>;</li>
+            <li><code>x &mapsto; y</code> (where y contains no x) becomes <code>K y</code>;</li>
+            <li><code>x &mapsto; y(x)</code> (where y contains no x) becomes <code>y</code>;</li>
             <li><code>x &mapsto; y(z)</code> becomes <code>S(x &mapsto; y)(x &mapsto; z)</code>,
                 where <code>y</code> and <code>z</code> may or may not depend on <code>x</code>.
             </li>
