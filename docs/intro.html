@@ -59,7 +59,7 @@
             and at least one such set exists, as we'll see shortly.</p>
     </div>
     <div class="chapter">
-        <h2>The S, K, I basis</h2>
+        <h2>The S, K, I basis and λ-calculus</h2>
 
         <p>
             <code>I</code>, the Ibis, or Identity, has a very simple reduction rule:
@@ -81,15 +81,7 @@
             That is, given two functions and an argument (which is also a function given the setup,
             but it's not important here), it applies both functions to the argument and fuses the results together.
         </p>
-        
-        <p>
-            As a matter of fact, <code>I</code> can be derived from <code>S</code> and <code>K</code>
-            and those two thus form a basis together.
-        </p>
-    </div>
-    <div class="chapter">
-        <h2>Connection to lambda calculus</h2>
-        
+                
         <p>An arbitrary lambda expression can be converted to SKI via the following rules:</p>
         <ul>
             <li><code>x &mapsto; x</code> becomes <code>I</code>;</li>
