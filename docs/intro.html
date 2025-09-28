@@ -55,8 +55,7 @@
             </li>
         </ul>
 
-        <p>With a right inventory of initial combinators this is enough for Turing completeness,
-            and at least one such set exists, as we'll see shortly.</p>
+        <p>With a right inventory of initial combinators this is enough for Turing completeness (computational universality).</p>
     </div>
     <div class="chapter">
         <h2>The {S, K, I} basis and λ-calculus</h2>
@@ -93,24 +92,17 @@
             <li>The process, known as bracket abstraction, is repeated from the innermost lambda expression
                 outwards and is guaranteed to terminate.</li>
         </ul>
-        For an optimal conversion algorithm, see
+        <p>For an optimal conversion algorithm, see
         <a href="https://okmij.org/ftp/tagless-final/ski.pdf">λ to SKI, Semantically — Declarative Pearl</a>
         by Oleg Kiselyov (Tohoku University, Japan) and
-        <a href="https://crypto.stanford.edu/~blynn/lambda/kiselyov.html">detailed implementation notes</a> by Ben Lynn.
-    </div>
+        <a href="https://crypto.stanford.edu/~blynn/lambda/kiselyov.html">detailed implementation notes</a> by Ben Lynn.</p>
 
-    
-    <div class="chapter">
-        <h2>Computational formalism of ultimate simplicity</h2>
-        
-        <code>X</code>, the combinator adhering <code>X x = x(X(X(X(XX))))(X(X(XX)))</code> is sufficient to reconstruct
-        <code>I = XX</code>, <code>K = X(XI)</code>, and <code>S = XK</code>. This way, combinatory logic admits a basis
-        consisting of a single combinator. Using this basis, we can represent combinatory logic as an equational theory
-        consisting of a single binary operation (application), a single constant (<code>X</code>) and a single identity
-        (the reduction rule stated above), which might be the simplest thinkable system featuring Turing-completeness.
-
+        <p><code>X</code>, the combinator adhering <code>X x = x(X(X(X(XX))))(X(X(XX)))</code> is sufficient to reconstruct
+        <code>I = XX</code>, <code>K = X(XI)</code>, and <code>S = XK</code>. This way, combinatory logic with a sole
+        <code>X</code> combinator already interprets λ-calculus and is Turing-complete. Combinatory logic can now be defined
+        as an equational theory with a single binary operation (application), a single constant (<code>X</code>) and a single
+        identity (the reduction rule stated above), which might be the simplest thinkable computationally universal system.
     </div>
-    
     
     <div class="chapter">
         <h2>What's connection to logic?</h2>
