@@ -36,7 +36,7 @@
             <li>Given that <code>x</code> and <code>y</code> are combinators, then so is <code>x y</code>, namely the one
                 returned by <code>x</code> when applied to <code>y</code>.</li>
             <li>If <code>z</code> is also a combinator, so is
-                <code>(x y) z</code>, also written <code>x y z</code> to save on parentheses. But note that <code>x (y z)</code> is <i>not</i> the same as <code>(x y) z</code>
+                <code>(x y) z</code>, also written <code>x y z</code> to save on parentheses. Beware that <code>x (y z)</code> is <i>not</i> the same as <code>(x y) z</code>
                 (at least not for arbitrary terms).</li>
             <li>We'll use single capital letters for common combinators and allow lumping them together (<code>CBx = C B x</code>) to save on space.
                 Lowercase identifiers must be separated: <code>f1 arg</code>, or <code>f1(arg)</code> or <code>(f1)arg</code>.</li>
