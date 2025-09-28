@@ -97,14 +97,23 @@
         by Oleg Kiselyov (Tohoku University, Japan) and
         <a href="https://crypto.stanford.edu/~blynn/lambda/kiselyov.html">detailed implementation notes</a> by Ben Lynn.</p>
 
+    </div>
+    <div class="chapter">
+        <h2>Minialistic programming language</h2>
         <p><code>X</code>, the combinator adhering <code>X x = x(X(X(X(XX))))(X(X(XX)))</code>, is sufficient to reconstruct
         <code>I = XX</code>, <code>K = X(XI)</code>, and <code>S = XK</code>. This way, combinatory logic with a sole
         <code>X</code> combinator already interprets λ-calculus and is Turing-complete. We have obtained a Turing-complete
         programming language whose expressions are formed from a single combinator by applicatation and can be seen as finite
         fill binary trees:
-        <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Catalan_4_leaves_binary_tree_example.svg/600px-Catalan_4_leaves_binary_tree_example.svg.png"/><br/>
-            ((XX)X)X &nbsp; &nbsp; (X(XX))X &nbsp; &nbsp; (XX)(XX) &nbsp; &nbsp; X((XX)X) &nbsp; &nbsp; X(X(XX)
-        </center>
+        <table align="center">
+            <tr><td colspan="4"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Catalan_4_leaves_binary_tree_example.svg/600px-Catalan_4_leaves_binary_tree_example.svg.png"></td></tr>
+            <tr><td align="center">((XX)X)X</td>
+                <td align="center">(X(XX))X</td>
+                <td align="center">(XX)(XX)</td>
+                <td align="center">X((XX)X)</td>
+                <td align="center">X(X(XX))</td>
+            </tr>
+        </table>
         By identifying every such tree with the trees that emerge if we apply the above reduction rule, we completely
         describe computational behavior of this programming language. In other words, combinatory logic can be described as a
         as the free equational theory with a single binary operation representing application, a single constant <code>X</code>,
