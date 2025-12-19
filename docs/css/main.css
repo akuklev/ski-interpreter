@@ -58,14 +58,47 @@
 }
 
 .bracket {
+    font-size: 13px;
+    display: inline-block;
     opacity: 30%;
 }
 
+.outline .bracket {
+    font-size: 15px;
+    vertical-align: -1px;
+    transform: scale(0.85,1);
+}
+
+.outline:has(.outline) .bracket {
+    font-size: 17px;
+    vertical-align: -2px;
+    transform: scale(0.7225,1);
+}
+
+.outline:has(.outline:has(.outline)) .bracket {
+    font-size: 19px;
+    vertical-align: -3px;
+    transform: scale(0.0.614125,1);
+}
+
+
 .outline {
-    border: solid 1px blue;
-    padding: 3px;
-    border-radius: 5px;
-    display: inline-block;
+  border-radius: 8px;
+  border-bottom: solid 1px #88880028;
+  margin: 0 -5px
+  padding: 0 4px
+}
+
+.outline:has(.outline) {
+  border-radius: 9px; 
+  margin: 0 -5.5px
+  padding: 1px 4px
+}
+
+.outline:has(.outline:has(.outline)) {
+  border-radius: 19px; 
+  margin: 0 -6px
+  padding: 2px 4px
 }
 
 /* teletype */
