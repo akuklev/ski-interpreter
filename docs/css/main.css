@@ -111,10 +111,11 @@
 
 .bracket + .outline{
   border-radius: 8px;
-  border-bottom: solid 1px #88880028;
+  border: solid 1px #88880028;
+/*border-bottom: solid 1px #88880028;
   border-left: solid 1px #88880000;
   border-right: solid 1px #88880000;
-  margin: 0 -4.7px 0 -4.9px;
+*/margin: 0 -4.7px 0 -4.9px;
   padding: 0 4px;
 }
 
@@ -159,27 +160,27 @@
 }
 
 div:has(> * > .outline) {
-  padding-top: 1px;
+  padding-top: 2px;
   padding-bottom: 2px
 }
 
 div:has(> * > * > .outline) {
-  padding-top: 2px;
+  padding-top: 4px;
   padding-bottom: 4px
 }
 
 div:has(> * > * > * > .outline) {
-  padding-top: 3px;
+  padding-top: 6px;
   padding-bottom: 6px
 }
 
 div:has(> * > * > * > * > .outline) {
-  padding-top: 4px;
+  padding-top: 8px;
   padding-bottom: 8px
 }
 
 div:has(> * > * > * > * > * > .outline) {
-  padding-top: 5px;
+  padding-top: 10px;
   padding-bottom: 10px
 }
 
