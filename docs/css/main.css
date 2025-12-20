@@ -88,15 +88,15 @@
 
 .bracket + .outline{
   border-radius: 8px;
-  border-bottom: solid 1px #88880028;
-  margin: 0 -4.8px 0 -5px;
-  padding: 0 4px;
+  border: solid 1px #88880028;
+  margin: 0 -4.7px 0 -4.9px;
+  padding: 0 3.7px 0 3.9px;
 }
 
 .bracket + .outline:has(> .outline) {
   border-radius: 9px; 
   margin: 0 -5.3px 0 -5.5px;
-  padding: 2px 4px;
+  padding: 2px 4.3px 2px 4.5px;
 }
 
 .bracket + .outline:has(> * > .outline) {
