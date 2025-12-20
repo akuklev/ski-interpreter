@@ -2,7 +2,7 @@
  *  Common functions related to SKI and not to just HTML.
  */
 'use strict';
-const linkprefix = '#expr:';
+const linkprefix = '##';
 
 /**
  * @desc   Creates a permalink for the given engine and code snippet.
