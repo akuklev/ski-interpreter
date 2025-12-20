@@ -69,13 +69,13 @@
     transform: scale(0.85,1);
 }
 
-.outline:has(> .outline:has(> .outline)) > .bracket {
+.outline:has(> * > .outline) > .bracket {
     font-size: 17px;
     vertical-align: -2px;
     transform: scale(0.7225,1);
 }
 
-.outline:has(> .outline:has(> .outline:has(> .outline))) > .bracket {
+.outline:has(> * > * > .outline) > .bracket {
     font-size: 19px;
     vertical-align: -3px;
     transform: scale(0.0.614125,1);
@@ -95,13 +95,13 @@
   padding: 2px 4px;
 }
 
-.outline:has(> .outline:has(> .outline)) {
+.outline:has(> * > .outline) {
   border-radius: 19px; 
   margin: 0 -6px;
   padding: 4px 4px;
 }
 
-.outline:has(> .outline:has(> .outline:has(> .outline))) {
+.outline:has(> * > * > .outline) {
   border-radius: 20px; 
   margin: 0 -6.5px;
   padding: 6px 4px;
