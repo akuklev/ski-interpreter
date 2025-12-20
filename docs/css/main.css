@@ -63,33 +63,33 @@
 }
 
 .outline:has(> .outline) > .bracket {
-    font-size: 13px;
+    font-size: 12px;
 }
 
 
 .outline:has(> * > .outline) > .bracket {
-    font-size: 15px;
+    font-size: 13px;
     vertical-align: -1px;
     transform: scale(0.85,1);
 }
 
 .outline:has(> * > * > .outline) > .bracket {
-    font-size: 17px;
+    font-size: 15px;
     vertical-align: -2px;
     transform: scale(0.7225,1);
 }
 
 .outline:has(> * > * > * > .outline) > .bracket {
-    font-size: 19px;
-    vertical-align: -3px;
-    transform: scale(0.0.614125,1);
+    font-size: 16px;
+    vertical-align: -1.5px;
+    transform: scale(0.8, 1);
 }
 
 
 .bracket + .outline{
   border-radius: 8px;
   border-bottom: solid 1px #88880028;
-  margin: 0 -5px;
+  margin: 0 -4.5px 0 -5px;
   padding: 0 4px;
 }
 
@@ -109,6 +109,26 @@
   border-radius: 20px; 
   margin: 0 -6.5px;
   padding: 6px 4px;
+}
+
+div:has(> .outline) {
+  padding-top: 2px;
+  padding-bottom: 2px
+}
+
+div:has(> * > .outline) {
+  padding-top: 4px;
+  padding-bottom: 4px
+}
+
+div:has(> * > * > .outline) {
+  padding-top: 6px;
+  padding-bottom: 6px
+}
+
+div:has(> * > * > * > .outline) {
+  padding-top: 8px;
+  padding-bottom: 8px
 }
 
 /* teletype */
