@@ -138,6 +138,11 @@ div:has(> * > * > * > .outline) {
   padding-bottom: 6px
 }
 
+div:has(> * > * > * > * > .outline) {
+  padding-top: 6px;
+  padding-bottom: 6px
+}
+
 /* teletype */
 
 #teletype {
