@@ -97,10 +97,11 @@
     transform: scale(0.8, 1);
 }
 
-.outline:has(> * > * > * > * > * > .outline) > .bracket {
+.outline:has(> * > * > * > * > * > * > .outline) > .bracket {
     font-size: 21px;
     vertical-align: -3px;
     transform: scale(0.62, 1);
+    margin-right: .3px;
 }
 
 
