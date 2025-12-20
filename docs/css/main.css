@@ -93,8 +93,8 @@
 
 .outline:has(> * > * > * > * > * > .outline) > .bracket {
     font-size: 19.5px;
-    vertical-align: -1.5px;
-    transform: scale(0.8, 1);
+    vertical-align: -2.5px;
+    transform: scale(0.67, 1);
 }
 
 .outline:has(> * > * > * > * > * > * > .outline) > .bracket {
