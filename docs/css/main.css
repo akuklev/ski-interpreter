@@ -95,13 +95,13 @@
 
 .bracket + .outline:has(> .outline) {
   border-radius: 9px;
-  margin: 0 -5px 0 -4.9px;
-  padding: 2px 2.7px 2px 3.9px;
+  margin: 0 -5.2px 0 -5px;
+  padding: 2px 3.48437489px 2px 3.7px;
 }
 
 .bracket + .outline:has(> * > .outline) {
   border-radius: 19px; 
-  margin: 0 6.2px 0 -6.5px;
+  margin: 0 -6.2px 0 -6.5px;
   padding: 4px 4px;
 }
 
