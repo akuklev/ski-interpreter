@@ -68,7 +68,7 @@
 
 
 .outline:has(> * > .outline) > .bracket {
-    font-size: 14px;
+    font-size: 13.5px;
     vertical-align: -.6px;
     transform: scale(0.85,1);
 }
@@ -80,7 +80,13 @@
 }
 
 .outline:has(> * > * > * > .outline) > .bracket {
-    font-size: 16px;
+    font-size: 16.5px;
+    vertical-align: -1.5px;
+    transform: scale(0.8, 1);
+}
+
+.outline:has(> * > * > * > * > .outline) > .bracket {
+    font-size: 18px;
     vertical-align: -1.5px;
     transform: scale(0.8, 1);
 }
@@ -109,6 +115,12 @@
   border-radius: 20px; 
   margin: 0 -6.5px;
   padding: 6px 4px;
+}
+
+.bracket + .outline:has(> * > * > * > .outline) {
+  border-radius: 21px; 
+  margin: 0 -7px;
+  padding: 8px 4px;
 }
 
 div:has(> * > .outline) {
