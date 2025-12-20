@@ -152,6 +152,10 @@
   padding: 12px 4px;
 }
 
+.bracket + .outline:hover:not(:has(.outline:hover)) {
+  border: solid 1px #777;
+}
+
 div:has(> * > .outline) {
   padding-top: 1px;
   padding-bottom: 2px
