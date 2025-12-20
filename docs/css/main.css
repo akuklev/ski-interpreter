@@ -172,11 +172,6 @@ div:has(> * > * > * > * > * > .outline) {
   padding-bottom: 10px
 }
 
-div:has(* > * > * > * > * > * > .outline) {
-  padding-top: 12px;
-  padding-bottom: 12px
-}
-
 /* teletype */
 
 #teletype {
