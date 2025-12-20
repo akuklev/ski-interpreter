@@ -94,9 +94,9 @@
 }
 
 .bracket + .outline:has(> .outline) {
-  border-radius: 9px; 
-  margin: 0 -5.3px 0 -5.5px;
-  padding: 2px 4.3px 2px 4.5px;
+  border-radius: 9px;
+  margin: 0 -5px 0 -4.9px;
+  padding: 2px 2.7px 2px 3.9px;
 }
 
 .bracket + .outline:has(> * > .outline) {
